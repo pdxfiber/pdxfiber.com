@@ -9,6 +9,7 @@ github_username: pdxfiber
 jquery_version: 3.2.1
 chat_url: "https://kiwiirc.com/client/irc.freenode.net:+6697/pdxfiber"
 github_url: "https://github.com/pdxfiber/pdxfiber.com"
+google_analytics_tracking_id: UA-111606567-1
 mailchimp_subscribe_url: "https://pdxfiber.us17.list-manage.com/subscribe/post?u=671813dc72874a7223ceead45&id=3492e6621c"
 meetup_api_url: "https://api.meetup.com/PDX-Fiber/events"
 meetup_api_sig_id: 244265326
