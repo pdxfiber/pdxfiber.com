@@ -1,0 +1,137 @@
+---
+layout: page
+title: The Issues
+footnotes:
+  sandynet: >
+    We are being somewhat generous with our math. For example, SandyNet, a publicly-owned municipal internet service in
+    Sandy, OR, which operates at-cost, charges $40 per month for 300Mbps upstream and 300Mbps downstream. Without a
+    promotional offer, Comcast charges $140&ndash;$155 per month for 10Mbps upstream and 250Mbps downstream. Not only
+    faster, Sandy&rsquo;s service also offers a 70% savings over Comcast.
+  pew-online-news: >
+    According to a
+    <a href="http://www.pewresearch.org/fact-tank/2017/09/07/americans-online-news-use-vs-tv-news-use/">September 2017
+    study by the Pew Research Center.</a>
+  internet-essentials: >
+    Comcast provides a service called Internet Essentials to low-income families. However, they only started it as a
+    condition of their purchase of NBCUniversal, and they continue to use it primarily as a tool for lobbying efforts.
+    It is a notoriously difficult program to successfully apply to.
+  chattanooga: >
+    Motherboard has a decent
+    <a href="https://motherboard.vice.com/en_us/article/ezpk77/chattanooga-gigabit-fiber-network">write-up of
+    Chattanooga&rsquo;s struggles with Comcast and AT&amp;T</a>, including blantant dismissal because of its relatively
+    small size and numerous lawsuits.
+---
+<article class="section">
+  <div class="container">
+    {% include notifications/draft.html %}
+    <div class="linkable">
+      <h3 class="title is-4"><a id="economic" href="#economic">Economic Issues</a></h3>
+      <div class="content">
+        <h4 class="subtitle is-5">
+          <a id="monopolies" href="#monopolies">Parts of internet infrastructure are natural monopolies.</a>
+        </h4>
+        <p>
+          The physical distribution of internet service to your house or business is a
+          {% include glossary.html term="natural monopoly" %}. A natural monopoly means that it is most economically
+          efficient for a single entity to control an entire market. In other words, it is impossible for a new
+          business to enter a market and be competitive because the amount of money they would have to spend
+          duplicating infrastructure is too high.
+        </p>
+        <p>
+          Because of this, natural monopolies are normally regulated by the government. You may be familiar with a few
+          of them: Portland General Electric or Pacific Power, NW Natural, and the Portland Water Bureau are all
+          subject to public utility regulations.
+        </p>
+        <p>
+          This regulation is important because it prevents companies from taking advantage of their monopoly status. In
+          unregulated markets, monopolies commonly engage in price fixing to maximize their profits. Also, they have
+          little concern for customer service or providing new products because their customers have no alternatives to
+          them.
+        </p>
+        <p>
+          Internet providers are not regulated as public utilities, but it is clear that they enjoy natural monopolies
+          in many areas, including Portland. {% include footnote.html to="sandynet" content="For example, the actual
+          cost of delivering residential broadband internet access is much lower, about 50% less, than what Comcast and
+          CenturyLink price their services at." %}
+        </p>
+      </div>
+      <div class="content">
+        <h4 class="subtitle is-5">
+          <a id="small-businesses" href="#small-businesses">
+            Content prioritization makes it harder to start companies, and makes running existing companies riskier.
+          </a>
+        </h4>
+        <p>
+          It&rsquo;s hard enough to imagine trying to compete with the likes of Netflix or YouTube. But what if you put
+          in all the effort to build and market your superior product or service, only to find that most of your
+          potential customers would have to pay an additional $10 per month to access it?
+        </p>
+        <p>
+          In 2017, one of few regulations that applied to internet providers&mdash;FCC classification as
+          {% include glossary.html term="common carrier" text="common carriers" %} under Title II of the Communications
+          Act of 1934&mdash;was revoked. This regulation guaranteed fair treatment of content transferred by internet
+          providers&mdash;what we know as &ldquo;net neutrality.&rdquo;
+        </p>
+        <p>
+          Small businesses depend on the principles of net neutrality to succeed. Without it, they risk being placed
+          into a lower service class than their established competitors who have negotiated high-value agreements for
+          faster access. In extreme cases, internet providers abuse this privilege to block content at the request of
+          one of their customers or to promote their internal services over competitors&rsquo;. This isn&rsquo;t
+          speculation: it happened numerous times before internet providers were classified as common carriers.
+        </p>
+      </div>
+      <hr>
+      <h3 class="title is-4"><a id="social" href="#social">Social Issues</a></h3>
+      <div class="content">
+        <h4 class="subtitle is-5">
+          <a id="social-value" href="#social-value">
+            Content prioritization reduces the value of the internet.
+          </a>
+        </h4>
+        <p>
+          With the <a href="#small-businesses">economic issue of content prioritization</a> is a more sinister social
+          issue. If internet providers are allowed to control the type of content people have access to, what prevents
+          them from forbidding or slowing access to anything that represents them negatively? Will they allow their
+          business customers to pay to have certain content blocked?
+        </p>
+        <p>
+          {% include footnote.html to="pew-online-news" content="43% of Americans frequently get news online." %} If
+          internet providers filter news without the public&rsquo;s knowledge, is this segment of people getting
+          news or veiled corporate advertising? With content prioritization, at the surface, the internet is no longer
+          a valuable communal wealth of shared knowledge. But at a deeper level, it is also a mechanism for controlling
+          people who are not technologically savvy enough to understand what is being filtered.
+        </p>
+        <p>
+          This is why {% include glossary.html term="common carrier" %} classification is so important, and has been
+          used for centuries to regulate services that are primarily in the public interest, such as physical mail and
+          air travel. It ensures that a greedy provider cannot interject their opinion into matters that are between
+          two otherwise-trusting third parties.
+        </p>
+      </div>
+      <div class="content">
+        <h4 class="subtitle is-5">
+          <a id="social-welfare" href="#social-welfare">
+            Internet providers are not incentivized to ensure disadvantaged persons have access.
+          </a>
+        </h4>
+        <p>
+          Without proper regulation, internet providers seek to maximize profits.
+          {% include footnote.html to="internet-essentials" content="This often leaves low-income individuals without
+          sufficient access," %} and certain low-income or rural areas without any access at all. For example, when
+          Chattanooga, TN decided to build a municipal fiber service, {% include footnote.html to="chattanooga"
+          content="only their downtown area had broadband access at all, and existing ISPs had no plans to provide
+          additional services." %}
+        </p>
+        <p>
+          Internet access creates opportunity, from learning through free online courses to applying for jobs. Without
+          an economic incentive to provide this opportunity&mdash;something which we have yet to see in an unregulated
+          telecom market&mdash;internet providers are happy to simply exclude disadvantaged persons from their services
+          if it is convenient for them. As our dependency on the internet grows over the next several decades, this gap
+          will become more evident as these individuals fall further behind.
+        </p>
+      </div>
+    </div>
+    <hr>
+    {% include footnotes.html %}
+  </div>
+</article>

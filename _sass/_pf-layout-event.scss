@@ -1,0 +1,20 @@
+.pf-event:not(:last-child) {
+  padding-bottom: 3rem;
+}
+
+.pf-event-datetime {
+  .pf-event-date {
+    font-weight: $weight-semibold;
+  }
+}
+
+.pf-event-place {
+  .pf-event-place-name {
+    font-weight: $weight-semibold;
+  }
+}
+
+.pf-event-title {
+  font-weight: $weight-semibold;
+  font-size: $subtitle-size;
+}

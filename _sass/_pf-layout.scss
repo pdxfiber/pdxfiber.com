@@ -1,0 +1,14 @@
+@import 'pf-layout-fixups';
+
+@import 'pf-layout-default';
+@import 'pf-layout-front';
+@import 'pf-layout-community';
+
+@import 'pf-layout-blog';
+@import 'pf-layout-event';
+@import 'pf-layout-people';
+@import 'pf-layout-subscribe';
+
+hr.pf-section-hr {
+  margin: 0;
+}

@@ -1,0 +1,35 @@
+---
+layout: front
+scripts:
+  - index
+assets:
+  icon-calendar: icons/icon-calendar.svg
+  icon-place: icons/icon-place.svg
+---
+<section class="hero is-dark pf-front-body">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title">Internet for All</h2>
+      <p class="is-size-5">
+        We&rsquo;re redefining Internet infrastructure in the Portland area to create the largest publicly-owned
+        broadband service in the country. By <a href="{{ "/issues/" | prepend: site.baseurl }}">removing barriers to
+        access</a>, <a href="{{ "/proposal/" | prepend: site.baseurl }}">implementing common-sense proposals</a>, and
+        <a href="{{ "/community/" | prepend: site.baseurl }}">working with the community</a>, we can help ensure
+        Internet access is open, fast, and reliable for everyone.
+      </p>
+    </div>
+  </div>
+</section>
+{% include subscribe.html %}
+<section class="section">
+  <div class="container">
+    <div class="columns pf-front-body">
+      <div class="column is-one-third">
+        <h2 class="subtitle">Upcoming Events</h2>
+      </div>
+      <div class="column">
+        <a id="pf-events-ref" href="https://www.meetup.com/PDX-Fiber/events">See all events →</a>
+      </div>
+    </div>
+  </div>
+</section>

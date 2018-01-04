@@ -1,0 +1,80 @@
+.pf-front-bg {
+  border-top: 10px solid $grey-dark;
+  background-color: lighten(desaturate($primary, 80%), 55%);
+}
+
+.pf-front {
+  .pf-logo {
+    @include block;
+
+    border-radius: $radius-large;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1.25rem;
+
+    $alpha: 0.97;
+    $gradient-top-left: rgba(darken(saturate(adjust-hue($primary, -10deg), 10%), 10%), $alpha);
+    $gradient-bottom-right: rgba(lighten(saturate(adjust-hue($primary, 10deg), 5%), 5%), $alpha);
+    background-image:
+      linear-gradient(141deg, $gradient-top-left 0%, rgba($primary, $alpha) 71%, $gradient-bottom-right 100%),
+      url($baseurl + '/assets/images/front_bg.jpg');
+    background-size: cover;
+
+    @include mobile {
+      .navbar-menu {
+        background-image: linear-gradient(141deg, $gradient-top-left 0%, rgba($primary, $alpha) 71%, $gradient-bottom-right 100%);
+      }
+    }
+
+    h1 {
+      color: $primary-invert;
+      font-family: $family-logo;
+      font-size: 4rem;
+      text-transform: uppercase;
+      word-spacing: 100vw;
+
+      // This moves the first character ('P') over so it appears to line up with the 'F'.
+      text-indent: 0.1rem;
+    }
+
+    .pf-logo-d {
+      // This moves the 'X' back above the 'B'.
+      letter-spacing: -0.1rem;
+    }
+  }
+
+  .pf-nav {
+    .nav-title {
+      font-size: 1.5rem;
+      font-weight: $weight-medium;
+    }
+
+    .box {
+      &.is-primary {
+        box-shadow: 0 2px 3px rgba($black, 0.1);
+        background-color: $purple;
+        color: $purple-invert;
+
+        &:hover, &:focus {
+          background-color: darken(saturate($purple, 5%), 5%);
+        }
+
+        &:active {
+          box-shadow: $box-link-active-shadow;
+        }
+      }
+    }
+  }
+}
+
+.pf-front-body {
+  .subtitle {
+    font-weight: $weight-medium;
+    font-size: 1.4rem;
+  }
+
+  &.hero a {
+    text-decoration: underline;
+  }
+}

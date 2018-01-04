@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+  <body>
+    <section class="section pf-front-bg">
+      <div class="container">
+        <div class="tile is-ancestor pf-front">
+          <div class="tile is-4 is-parent">
+            <div class="tile is-child pf-logo">
+              <h1 class="title">P<span class="pf-logo-d">D</span>X Fiber</h1>
+            </div>
+          </div>
+          <div class="tile is-parent">
+            <nav class="tile is-child pf-nav">
+              {% include front/navlink.html
+                class="is-primary"
+                path="/proposal/"
+                title="View the Proposal"
+                subtitle="See our pragmatic approach to municipal broadband." %}
+              {% include front/navlink.html
+                path="/impact/"
+                title="Explore Impact and Costs"
+                subtitle="Learn how publicly-owned internet access bolsters our community." %}
+              {% include front/navlink.html
+                path="/community/join.html"
+                title="Join Us"
+                subtitle="Help create an inclusive next-generation network for all Portlanders." %}
+            </nav>
+          </div>
+        </div>
+      </div>
+    </section>
+    {{ content }}
+    {% include footer.html %}
+  </body>
+</html>

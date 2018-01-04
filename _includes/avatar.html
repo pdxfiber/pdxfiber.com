@@ -1,0 +1,2 @@
+{%- capture extension %}{% if include.format %}.{{ include.format }}{% else %}.jpg{% endif %}{% endcapture -%}
+<img class="pf-people-avatar" src="{{ include.person | escape | append: extension | prepend: '/assets/images/people/' | prepend: site.baseurl }}">

@@ -1,0 +1,22 @@
+.level-left, .level-right, .level-item {
+  flex-shrink: initial;
+}
+
+.card-content .media-content {
+  overflow: initial;
+}
+
+.card-footer:not(.is-mobile) {
+  @include mobile {
+    flex-direction: column;
+
+    .card-footer-item {
+      flex-basis: initial;
+
+      &:not(:last-child) {
+        border-right: none;
+        border-bottom: $card-footer-border-top;
+      }
+    }
+  }
+}

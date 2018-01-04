@@ -1,0 +1,2 @@
+{%- capture anchor %}{{ include.term | replace: ' ', '-' }}{% endcapture -%}
+<a href="{{ '/glossary.html#' | append: anchor | prepend: site.baseurl }}">{% if include.text %}{{ include.text }}{% else %}{{ include.term }}{% endif %}</a>

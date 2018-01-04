@@ -1,0 +1,17 @@
+<a class="box{% if include.class %} {{ include.class }}{% endif %}" href="{{ include.path | prepend: site.baseurl }}">
+  <div class="level is-mobile">
+    <div class="level-left">
+      <div class="level-item">
+        <div>
+          <div class="nav-title">{{ include.title }}</div>
+          <div class="nav-subtitle">{{ include.subtitle }}</div>
+        </div>
+      </div>
+    </div>
+    <div class="level-right">
+      <div class="level-item">
+        <div class="icon is-large">{% include icons/icon-arrow-forward.svg %}</div>
+      </div>
+    </div>
+  </div>
+</a>

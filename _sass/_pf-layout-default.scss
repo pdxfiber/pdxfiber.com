@@ -1,0 +1,40 @@
+.pf-default-bg {
+  border-top: 10px solid $primary;
+
+  .navbar-burger {
+    border: 0;
+    background-color: transparent;
+  }
+}
+
+.pf-default-logo {
+  font-family: 'Space Mono';
+  font-size: 1.5rem;
+  font-weight: $weight-semibold;
+  text-transform: uppercase;
+}
+
+.tabs.pf-default-nav {
+  background-color: $grey-dark;
+
+  ul {
+    border-bottom: none;
+  }
+
+  a {
+    background-color: $grey-dark;
+    color: $white;
+    border-bottom-color: transparent;
+    margin-bottom: 0;
+
+    &:hover {
+      background-color: hsl(0%, 0%, 35%);
+    }
+  }
+
+  li.is-active a {
+    color: $grey-dark;
+    background-color: $white;
+    border-bottom-color: transparent;
+  }
+}

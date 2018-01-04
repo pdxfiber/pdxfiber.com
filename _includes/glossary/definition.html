@@ -1,0 +1,5 @@
+{%- capture anchor %}{{ include.term | replace: ' ', '-' | escape }}{% endcapture -%}
+<div class="content">
+  <h4 class="subtitle is-5"><a id="{{ anchor }}" href="#{{ anchor }}">{{ include.term | escape }}</a></h4>
+  <p>{{ include.definition }}</p>
+</div>

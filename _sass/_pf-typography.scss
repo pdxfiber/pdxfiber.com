@@ -1,0 +1,33 @@
+.pf-bignum {
+  font-size: 1.4rem;
+  font-weight: $weight-semibold;
+
+  display: block;
+  width: 2.5rem;
+  height: 2.5rem;
+  line-height: calc(2.5rem - 6px);
+  text-align: center;
+
+  border-radius: 50%;
+  border: 3px solid $grey-dark;
+}
+
+.pf-bignum-offset {
+  margin-top: calc(5px + 0.15rem);
+}
+
+.content ol[type="A"] {
+  list-style-type: upper-alpha;
+}
+
+.content ol[type="a"] {
+  list-style-type: lower-alpha;
+}
+
+.content ol[type="I"] {
+  list-style-type: upper-roman;
+}
+
+.content ol[type="i"] {
+  list-style-type: lower-roman;
+}

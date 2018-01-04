@@ -1,0 +1,9 @@
+{% if page.footnotes %}
+  <footer class="pf-footnotes">
+    <ol>
+      {% for footnote in page.footnotes %}
+        <li id="fn-{{ footnote[0] }}">{{ footnote[1] }} <a href="#fn-{{ footnote[0] }}-ref" aria-label="Back to content">↵</a></li>
+      {% endfor %}
+    </ol>
+  </footer>
+{% endif %}

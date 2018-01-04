@@ -1,0 +1,17 @@
+@import '../vendor/bulma/sass/utilities/initial-variables';
+@import '../vendor/bulma/sass/utilities/functions';
+
+$widescreen: $desktop;
+$fullhd: $desktop;
+$family-sans-serif: 'Roboto', BlinkMacSystemFont, -apple-system, 'Segoe UI', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+$family-logo: 'Space Mono', $family-sans-serif;
+$primary: #00cc57;
+$purple: #a600cc;
+
+@import '../vendor/bulma/sass/utilities/derived-variables';
+
+@import '../vendor/bulma/bulma';
+@import 'pf-article';
+@import 'pf-assets';
+@import 'pf-layout';
+@import 'pf-typography';

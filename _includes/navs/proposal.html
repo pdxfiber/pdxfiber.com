@@ -1,0 +1,8 @@
+<section class="tabs pf-default-nav">
+  <div class="container">
+    <ul>
+      <li{% if page.url == '/proposal/' %} class="is-active"{% endif %}><a href="{{ '/proposal/' | prepend: site.baseurl }}">Overview</a></li>
+      <li{% if page.url == '/proposal/plan.html' %} class="is-active"{% endif %}><a href="{{ '/proposal/plan.html' | prepend: site.baseurl }}">Plan</a></li>
+    </ul>
+  </div>
+</section>

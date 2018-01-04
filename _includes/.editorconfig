@@ -1,0 +1,5 @@
+[footnote.html]
+insert_final_newline = false
+
+[glossary.html]
+insert_final_newline = false

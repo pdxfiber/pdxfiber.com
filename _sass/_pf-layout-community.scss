@@ -1,0 +1,16 @@
+.pf-community-join-link {
+  background-color: lighten(saturate($purple, 5%), 5%);
+  color: $purple-invert;
+
+  .title, .subtitle {
+    color: inherit;
+  }
+}
+
+.pf-community-join {
+  h2.subtitle {
+    font-size: 1.4rem;
+    font-weight: $weight-medium;
+    margin-bottom: 0;
+  }
+}

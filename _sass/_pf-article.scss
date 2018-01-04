@@ -1,0 +1,52 @@
+article {
+  counter-reset: footnotes;
+
+  .pf-footnotes {
+    color: $grey;
+
+    :target {
+      color: $grey-darker;
+    }
+  }
+
+  a[aria-describedby="footnote-label"] {
+    counter-increment: footnotes;
+    color: inherit;
+    cursor: inherit;
+
+    &::after {
+      content: counter(footnotes);
+      vertical-align: super;
+      font-size: 0.7rem;
+      color: $link;
+      cursor: pointer;
+    }
+
+    &:hover::after {
+      color: $link-hover;
+    }
+  }
+}
+
+.linkable {
+  h3, h4 {
+    > a {
+      position: relative;
+      color: inherit;
+      cursor: inherit;
+
+      &::before {
+        content: '#';
+        display: block;
+        position: absolute;
+        left: -1.2rem;
+        color: $link;
+        cursor: pointer;
+      }
+    }
+  }
+
+  a:not([aria-describedby="footnote-label"]):target {
+    background-color: lighten($link, 40%);
+  }
+}

@@ -1,0 +1,95 @@
+---
+layout: page
+title: Our Community
+subtitle: A vibrant group of Portlanders bringing you happiness one byte at a time
+---
+<article>
+  <section class="section pf-community-join-link">
+    <div class="container">
+      <h3 class="title is-4">Join Us!</h3>
+      <div class="card">
+        <div class="card-content">
+          <div class="media">
+            <div class="media-left">
+              <figure class="image is-48x48">
+                {% include avatar.html person="anonymous" format="png" %}
+              </figure>
+            </div>
+            <div class="media-content">
+              <p class="title is-5"><a href="{{ '/community/join.html' | prepend:site.baseurl }}">You</a></p>
+              <p class="subtitle is-6">Community Leader</p>
+            </div>
+          </div>
+          <div class="content">
+            <p>
+              We&rsquo;re always looking for new advocates to volunteer their time and experience to bring municipal
+              broadband to Portland. <a href="{{ '/community/join.html' | prepend:site.baseurl }}">Become a part of the
+              movement!</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container">
+      <h3 class="title is-4">Organizers</h3>
+      <div class="card">
+        <div class="card-content">
+          <div class="media">
+            <div class="media-left">
+              <figure class="image is-48x48">
+                {% include avatar.html person="noah-fontes" %}
+              </figure>
+            </div>
+            <div class="media-content">
+              <p class="title is-5">Noah Fontes</p>
+              <p class="subtitle is-6">Managing Organizer</p>
+            </div>
+          </div>
+          <div class="content">
+            <p>
+              Noah is a multidisciplinary software engineer with experience in advertising, finance, organic farming,
+              and data visualization. He has been a teaching fellow in Ghana, where he helped young entrepreneurs
+              start technology companies and raise venture capital. He has been active in the open-source community for
+              nearly 20 years.
+            </p>
+          </div>
+        </div>
+        <footer class="card-footer">
+          <a class="card-footer-item" href="mailto:noah@pdxfiber.com">
+            <div>
+              <span class="icon is-small">{% include icons/icon-email.svg %}</span> noah@pdxfiber.com
+            </div>
+          </a>
+          <a class="card-footer-item" href="https://keybase.io/impl">
+            <div>
+              <span class="icon is-small">{% include icons/icon-key.svg %}</span> 3665 FFF7 9D38 7BAA
+            </div>
+          </a>
+        </footer>
+      </div>
+    </div>
+  </section>
+  <hr class="pf-section-hr">
+  <section class="section">
+    <div class="container">
+      <h3 class="title is-4">Advisors</h3>
+      <div class="content">
+        <p>
+          If you have extensive public policy experience or knowledge of the telecom industry and would be willing to
+          give occasional guidance, please <a href="mailto:{{ site.organizers_email }}">contact us</a>.
+        </p>
+      </div>
+    </div>
+  </section>
+  <hr class="pf-section-hr">
+  <section class="section">
+    <div class="container">
+      <h3 class="title is-4">Partners</h3>
+      <div class="content">
+        <p>Interesting in partnering with PDX Fiber? <a href="mailto:{{ site.organizers_email }}">Get in touch!</a></p>
+      </div>
+    </div>
+  </section>
+</article>

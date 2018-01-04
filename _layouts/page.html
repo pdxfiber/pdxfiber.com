@@ -1,0 +1,18 @@
+---
+layout: default
+---
+<section class="hero is-dark">
+  <div class="hero-body">
+    <div class="container">
+      <header>
+        <h1 class="title">{{ page.title }}</h1>
+        {% if page.subtitle %}<h2 class="subtitle">{{ page.subtitle }}</h2>{% endif %}
+      </header>
+    </div>
+  </div>
+</section>
+{% if page.nav %}
+  {% capture path %}navs/{{ page.nav }}.html{% endcapture %}
+  {% include {{ path }} %}
+{% endif %}
+{{ content }}
