@@ -4,7 +4,12 @@ organizers_email: organizers@pdxfiber.com
 description: >
   The advocacy group for municipal broadband in the Portland area.
 url: "https://www.pdxfiber.com"
-twitter_username: PDX_Fiber
+twitter:
+  username: PDXFiber
+social:
+  links:
+    - https://twitter.com/PDXFiber
+    - https://github.com/pdxfiber
 github_username: pdxfiber
 jquery_version: 3.2.1
 chat_url: "https://kiwiirc.com/client/irc.freenode.net:+6697/pdxfiber"
@@ -27,3 +32,4 @@ exclude:
 
 plugins:
 - jekyll-sitemap
+- jekyll-seo-tag
