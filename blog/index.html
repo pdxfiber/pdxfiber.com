@@ -1,0 +1,51 @@
+---
+layout: page
+title: Blog
+description: >
+  Our latest thoughts, ideas, and analysis of the municipal broadband landscape, both in Portland and across the world.
+---
+<section class="section" itemscope itemtype="http://schema.org/Blog">
+  <div class="container">
+    {% for post in paginator.posts %}
+      <article itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+        <meta itemprop="mainEntityOfPage" content="{{ post.url | prepend: site.baseurl }}">
+
+        <h3 class="title is-4" itemprop="name headline"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
+        <div class="pf-blog-post content" itemprop="articleBody">
+          {{ post.content }}
+        </div>
+        <div class="level is-mobile">
+          <div class="level-left is-mobile has-text-grey">
+            <div class="level-item">
+              <div><span class="icon is-small">{% include icons/icon-clock.svg %}</span> <time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%b %-d, %Y" }}</time></div>
+            </div>
+            {% if post.author %}
+              <div class="level-item">
+                <div><span class="icon is-small">{% include icons/icon-person.svg %}</span> <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ post.author }}</span></span></div>
+              </div>
+            {% endif %}
+          </div>
+        </div>
+      </article>
+      {% unless forloop.last %}<hr>{% endunless %}
+    {% endfor %}
+  </div>
+</section>
+{% if paginator.total_pages > 1 %}
+  <section class="section">
+    <div class="container">
+      <nav class="pagination" role="navigation" aria-label="pagination">
+        <a class="pagination-previous" {% unless paginator.next_page %}disabled{% else %}href="{{ paginator.next_page_path | prepend: site.baseurl }}"{% endunless %}>Previous</a>
+        <a class="pagination-next" {% unless paginator.previous_page %}disabled{% else %}href="{{ paginator.previous_page_path | prepend: site.baseurl }}"{% endunless %}>Next</a>
+        <ul class="pagination-list">
+          {% for page in (1..paginator.total_pages) reversed %}
+            <li>
+              {%- capture url %}{% if page == paginator.page %}{{ page.url }}{% elsif page == 1 %}{{ '/blog/' }}{% else %}{{ site.paginate_path | replace: ':num', page }}{% endif %}{% endcapture -%}
+              <a class="pagination-link{% if page == paginator.page %} is-current{% endif %}" href="{{ url | prepend: site.baseurl }}" {% if page == paginator.page %}aria-current-"page"{% endif %} aria-label="Go to page {{ page }}">{{ paginator.total_pages | minus: page | plus: 1 }}</a>
+            </li>
+          {% endfor %}
+        </ul>
+      </nav>
+    </div>
+  </section>
+{% endif %}

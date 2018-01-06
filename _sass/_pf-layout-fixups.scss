@@ -2,6 +2,10 @@
   flex-shrink: initial;
 }
 
+.card {
+  @include block;
+}
+
 .card-content .media-content {
   overflow: initial;
 }

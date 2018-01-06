@@ -21,8 +21,14 @@ meetup_api_sig_id: 244265326
 meetup_api_sig: cc2365295b29a0d8b999ba9f0e6080505845ec13
 
 baseurl: ''
+permalink: /blog/:year/:month/:title:output_ext
 
 markdown: kramdown
+
+paginate: 10
+paginate_path: /blog/p:num/
+
+timezone: America/Los_Angeles
 
 exclude:
 - CNAME
@@ -31,5 +37,6 @@ exclude:
 - vendor
 
 plugins:
-- jekyll-sitemap
+- jekyll-paginate
 - jekyll-seo-tag
+- jekyll-sitemap

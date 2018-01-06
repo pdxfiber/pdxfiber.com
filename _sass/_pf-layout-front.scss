@@ -78,3 +78,14 @@
     text-decoration: underline;
   }
 }
+
+.pf-front-blog-post:not(:last-child) {
+  padding-bottom: calc(4.5rem - #{$column-gap});
+}
+
+.pf-front-blog-title {
+  font-weight: $weight-semibold;
+  font-size: $subtitle-size;
+  line-height: 1.25;
+  margin-bottom: 0.25rem;
+}
