@@ -49,21 +49,7 @@ assets:
             <div class="pf-blog-post content">
               {{ post.excerpt }}
             </div>
-            <div class="level is-mobile">
-              <div class="level-left is-mobile has-text-grey">
-                <div class="level-item">
-                  <div><span class="icon is-small">{% include icons/icon-clock.svg %}</span> <time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%b %-d, %Y" }}</time></div>
-                </div>
-                {% if post.author %}
-                  <div class="level-item">
-                    <div><span class="icon is-small">{% include icons/icon-person.svg %}</span> <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ post.author }}</span></span></div>
-                  </div>
-                {% endif %}
-                <div class="level-item">
-                  <a href="{{ post.url | prepend: site.baseurl }}"><span class="icon is-small">{% include icons/icon-link.svg %}</span> Read full post</a>
-                </div>
-              </div>
-            </div>
+            {% include blog/byline.html context=post link=true %}
           </article>
         {% endfor %}
         <a href="{{ '/blog/' | prepend: site.baseurl }}">See all posts →</a>

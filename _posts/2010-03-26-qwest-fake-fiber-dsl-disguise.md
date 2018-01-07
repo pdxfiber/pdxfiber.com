@@ -7,7 +7,7 @@ categories: advocacy
 ---
 Qwest, our local phone company–the company that owns all of the phone lines in the city, ran this full page ad in the Oregonian. Qwest is eager to advertise their “Fiber-optic* fast connection speeds up to 20 Mbps.”
 
-<!--XXX: Add Qwest ad here. Caption: Qwest Ad from 3/26 Oregonian-->
+{% include blog/image.html name="P1030681" caption="Qwest Ad from 3/26 Oregonian" %}
 
 What Qwest is less eager to advertise is the little asterisk on “fiber-optic” which leads to the fine print “Fiber-optics exist only from the neighborhood terminal to the Internet.” So, if you happen to live in the neighborhood node, this is a pretty great deal. Unfortunately, the node in my neighborhood is about 4 or 5 blocks away, and the size of a doghouse. Really, Qwest is selling plain old DSL, but they’ve moved the DSLAM (the device that creates the DSL signal on the phone line) into a box in your neighborhood, and connected it back to their office with fiber-optics. They could just as easily call their service “Ethernet fast connections,” because somewhere, far away from your home, they use Ethernet to connect equipment to the Internet.
 

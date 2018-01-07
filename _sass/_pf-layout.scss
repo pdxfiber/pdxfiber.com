@@ -6,8 +6,22 @@
 
 @import 'pf-layout-blog';
 @import 'pf-layout-event';
+@import 'pf-layout-modal';
 @import 'pf-layout-people';
 @import 'pf-layout-subscribe';
+
+html, body {
+  height: 100%;
+}
+
+#pf-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.pf-primary {
+  flex-grow: 1;
+}
 
 hr.pf-section-hr {
   margin: 0;

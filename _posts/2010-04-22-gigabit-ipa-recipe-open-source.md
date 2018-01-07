@@ -12,9 +12,12 @@ From <https://code.google.com/archive/p/gigabitipa/>:
 >
 > We believe in the opportunity offered by gigabit fiber networks for Portland and for communities everywhere. We’re “opening the source code” so you can home brew a Gigabit IPA all your own. (It’s fiber-to-the-home, right?)
 >
+> Sam Adams &bull; Mayor, City of Portland, Oregon
+>
 > Learn more about Gigabit IPA [here]({{ site.baseurl }}{% post_url 2010-03-31-hopworks-introducing-gigabit-ipa %}).
 
 Here is the [recipe](https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/gigabitipa/gigabitIPA.txt).
 
-<!--XXX: Add the poster? Here is your collectible poster:
- Caption: Gigabit IPA Recipe and Announcement by Bram Pitoyo-->
+Here is your collectible poster:
+
+{% include blog/image.html name="gigabit-ipa-recipe-8x10-short" format="png" caption="Gigabit IPA Recipe and Announcement by Bram Pitoyo" rights="&copy; Bram Pitoyo. All rights reserved." %}

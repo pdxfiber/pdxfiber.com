@@ -1,0 +1,18 @@
+{%- assign context = include.context | default: page %}
+<div class="level is-mobile">
+  <div class="level-left is-mobile has-text-grey">
+    <div class="level-item">
+      <div><span class="icon is-small">{% include icons/icon-clock.svg %}</span> <time datetime="{{ context.date | date_to_xmlschema }}" itemprop="datePublished">{{ context.date | date: "%b %-d, %Y" }}</time></div>
+    </div>
+    {% if context.author %}
+      <div class="level-item">
+        <div><span class="icon is-small">{% include icons/icon-person.svg %}</span> <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ context.author }}</span></span></div>
+      </div>
+    {% endif %}
+    {% if include.link %}
+      <div class="level-item">
+        <a href="{{ context.url | prepend: site.baseurl }}"><span class="icon is-small">{% include icons/icon-link.svg %}</span> Read full post</a>
+      </div>
+    {% endif %}
+  </div>
+</div>

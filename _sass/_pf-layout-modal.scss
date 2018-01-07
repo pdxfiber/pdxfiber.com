@@ -1,0 +1,14 @@
+$modal-content-width-tablet: $modal-content-width;
+$modal-content-width-desktop: 960px !default;
+
+.pf-gallery-modal {
+  .modal-content, .modal-card {
+    @include tablet {
+      width: $modal-content-width-tablet;
+    }
+
+    @include desktop {
+      width: $modal-content-width-desktop;
+    }
+  }
+}

@@ -9,7 +9,7 @@ categories: events fun
 
 The logo was created by Portland’s own [Bram Pitoyo](http://www.brampitoyo.com/), and we certainly hope that the folks in Mountain View will see it as an homage and invitation to come enjoy a pint or two of one of Portland’s finest productions.
 
-<!--XXX: Add logo here. Caption: Gigabit IPA logo by Bram Pitoyo-->
+{% include blog/image.html name="gigabit-ipa-color1" caption="Gigabit IPA logo by Bram Pitoyo" rights="&copy; Bram Pitoyo. All rights reserved." %}
 
 Please read on for complete details on the release of Hopworks’ Gigabit IPA.
 

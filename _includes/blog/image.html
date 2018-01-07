@@ -1,0 +1,19 @@
+{%- assign width = include.width | default: '400' -%}
+{%- assign extension = include.format | default: 'jpg' | prepend: '.' -%}
+{%- assign post = page.path | remove_first: '_posts/' | split: '.' | pop | join: '.' -%}
+{%- capture base_path %}{{ site.baseurl }}/assets/blog/{{ post }}/{{ include.name }}_{% endcapture -%}
+{%- assign small_path = base_path | append: width | append: extension -%}
+{%- assign large_path = base_path | append: 'o' | append: extension -%}
+<figure>
+  <a href="{{ large_path }}" class="pf-gallery-link"><img src="{{ small_path }}" width="{{ width }}" alt="{{ include.alt | default: include.caption }}"></a>
+  {% if include.caption %}
+    <figcaption markdown="span">
+{{ include.caption }}
+    </figcaption>
+  {% endif %}
+  {% if include.rights %}
+    <div class="content pf-figure-rights" markdown="span">
+{{ include.rights }}
+    </div>
+  {% endif %}
+</figure>

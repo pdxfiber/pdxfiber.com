@@ -2,10 +2,15 @@
 <html>
   {% include head.html %}
   <body>
-    <section class="pf-default-bg">
-      {% include navbar.html %}
-    </section>
-    {{ content }}
-    {% include footer.html %}
+    <div id="pf-container">
+      <section class="pf-default-bg">
+        {% include navbar.html %}
+      </section>
+      {{ content }}
+      {% include footer.html %}
+    </div>
+    <div id="pf-modals">
+      {% include modals.html %}
+    </div>
   </body>
 </html>

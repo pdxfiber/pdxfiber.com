@@ -4,7 +4,7 @@ title: Blog
 description: >
   Our latest thoughts, ideas, and analysis of the municipal broadband landscape, both in Portland and across the world.
 ---
-<section class="section" itemscope itemtype="http://schema.org/Blog">
+<section class="section pf-primary" itemscope itemtype="http://schema.org/Blog">
   <div class="container">
     {% for post in paginator.posts %}
       <article itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
@@ -14,18 +14,7 @@ description: >
         <div class="pf-blog-post content" itemprop="articleBody">
           {{ post.content }}
         </div>
-        <div class="level is-mobile">
-          <div class="level-left is-mobile has-text-grey">
-            <div class="level-item">
-              <div><span class="icon is-small">{% include icons/icon-clock.svg %}</span> <time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%b %-d, %Y" }}</time></div>
-            </div>
-            {% if post.author %}
-              <div class="level-item">
-                <div><span class="icon is-small">{% include icons/icon-person.svg %}</span> <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ post.author }}</span></span></div>
-              </div>
-            {% endif %}
-          </div>
-        </div>
+        {% include blog/byline.html context=post %}
       </article>
       {% unless forloop.last %}<hr>{% endunless %}
     {% endfor %}
@@ -49,3 +38,4 @@ description: >
     </div>
   </section>
 {% endif %}
+{% include subscribe.html %}

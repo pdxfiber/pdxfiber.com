@@ -26,29 +26,6 @@
     </div>
   </div>
 </footer>
-<div id="credits-modal" class="modal">
-  <div class="modal-background" id="credits-background"></div>
-  <div class="modal-card">
-    <header class="modal-card-head">
-      <p class="modal-card-title">Credits</p>
-      <button id="credits-close" class="delete" aria-label="close"></button>
-    </header>
-    <section class="modal-card-body content">
-      <p>We use a bunch of open-source technology:</p>
-      <ul>
-        <li><a href="https://bulma.io/">Bulma</a></li>
-        <li><a href="https://jekyllrb.com/">Jekyll</a></li>
-        <li><a href="https://jquery.com/">jQuery</a></li>
-        <li><a href="https://material.io/icons/">Material icons</a></li>
-        <li><a href="http://sass-lang.com/">Sass</a></li>
-      </ul>
-      <p>In addition, we use the following by permission:</p>
-      <ul>
-        <li><a href="https://flic.kr/p/dhfjJc">DSC03435</a>, by Can Eldem, released under <a href="https://creativecommons.org/licenses/by-nc-sa/2.0/">CC BY-NC-SA 2.0</a></li>
-      </ul>
-    </section>
-  </div>
-</div>
 {% capture jquery_path %}/assets/js/jquery-{{ site.jquery_version }}.min.js{% endcapture %}
 <script charset="utf-8" src="{{ jquery_path | prepend: site.baseurl }}" defer></script>
 <script charset="utf-8" src="{{ '/assets/js/main.js' | prepend: site.baseurl }}" defer></script>

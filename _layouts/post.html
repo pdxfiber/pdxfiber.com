@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-<article itemscope itemtype="http://schema.org/BlogPosting">
+<article class="pf-primary" itemscope itemtype="http://schema.org/BlogPosting">
   <header class="hero is-dark">
     <div class="hero-body">
       <div class="container">
@@ -12,24 +12,12 @@ layout: default
       </div>
     </div>
   </header>
-
   <section class="section">
     <div class="container">
       <div class="pf-blog-post content" itemprop="articleBody">
         {{ content }}
       </div>
-      <div class="level is-mobile">
-        <div class="level-left is-mobile has-text-grey">
-          <div class="level-item">
-            <div><span class="icon is-small">{% include icons/icon-clock.svg %}</span> <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time></div>
-          </div>
-          {% if page.author %}
-            <div class="level-item">
-              <div><span class="icon is-small">{% include icons/icon-person.svg %}</span> <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span></div>
-            </div>
-          {% endif %}
-        </div>
-      </div>
+      {% include blog/byline.html %}
       {% if page.footnotes %}
         <hr>
         {% include footnotes.html %}
@@ -37,3 +25,4 @@ layout: default
     </div>
   </section>
 </article>
+{% include subscribe.html %}
