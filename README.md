@@ -4,7 +4,7 @@ Hi!
 
 This is the public, open-source repository for [pdxfiber.com](https://www.pdxfiber.com/), an initiative to bring municipal fiber internet access to the Portland, Oregon area.
 
-We'd love to have your thoughts, ideas, or contributions. Before engaging, we invite you to review our [code of conduct](CODE_OF_CONDUCT.md) and [licensing information](LICENSING.md).
+We'd love to have your thoughts, ideas, or contributions. Before engaging, we invite you to review our [code of conduct](CODE_OF_CONDUCT.md) and [licensing information](LICENSE.md).
 
 ## Getting Started
 
