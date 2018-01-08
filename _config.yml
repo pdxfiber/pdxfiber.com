@@ -31,12 +31,32 @@ paginate_path: /blog/p:num/
 timezone: America/Los_Angeles
 
 exclude:
+- CODE_OF_CONDUCT.md
 - CNAME
 - Gemfile
 - Gemfile.lock
+- LICENSE.md
+- README.md
 - vendor
 
 plugins:
 - jekyll-paginate
 - jekyll-seo-tag
 - jekyll-sitemap
+
+webrick:
+  headers:
+    Content-Security-Policy: >-
+      default-src 'none';
+      child-src https:;
+      img-src 'self' https://www.google-analytics.com data:;
+      font-src 'self';
+      script-src 'self' 'sha256-yjeP9f+DRCLMxpxgxQJ3+//xRlOg6r3zbgfv56LlHAE=' https://www.googletagmanager.com https://www.google-analytics.com https://api.meetup.com;
+      style-src 'self';
+      object-src 'none';
+      frame-src https:;
+      frame-ancestors 'none'
+    X-Content-Type-Options: nosniff
+    X-Frame-Options: DENY
+    X-XSS-Protection: 1; mode=block
+    Referrer-Policy: strict-origin-when-cross-origin

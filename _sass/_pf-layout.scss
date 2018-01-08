@@ -16,11 +16,16 @@ html, body {
 
 #pf-container {
   display: flex;
-  flex-direction: column;
-}
+  flex-flow: column nowrap;
+  min-height: 100vh;
 
-.pf-primary {
-  flex-grow: 1;
+  > * {
+    flex: 0 1 auto;
+  }
+
+  > .pf-primary {
+    flex: 1 1 0;
+  }
 }
 
 hr.pf-section-hr {

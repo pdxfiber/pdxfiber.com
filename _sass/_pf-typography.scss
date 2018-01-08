@@ -16,6 +16,10 @@
   margin-top: calc(5px + 0.15rem);
 }
 
+.pf-no-wrap {
+  white-space: nowrap;
+}
+
 .content ol[type="A"] {
   list-style-type: upper-alpha;
 }
